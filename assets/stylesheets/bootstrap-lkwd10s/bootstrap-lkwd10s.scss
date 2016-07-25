@@ -1,0 +1,76 @@
+// Lakewood Tennis Center
+// Custom Bootstrap
+// -----------------------------------------------------
+
+//== Brand Colors
+//
+$lkwd10s-primary:   #16355a;
+$lkwd10s-secondary: #046a38;
+$lkwd10s-accent-1:  #dde66a;
+$lkwd10s-accent-2:  #a22a22;
+$lkwd10s-accent-3:  #2c5234;
+
+//== Brand Typography
+//
+$lkwd10s-body-font-family:        'Lato', Arial, Helvetica, sans-serif;
+$lkwd10s-headings-font-family:    'Montserrat', Arial, Helvetica, sans-serif;
+$lkwd10s-headings-font-weight:    400;
+
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//##
+$brand-primary:         $lkwd10s-primary;   // #16355a
+$brand-success:         $lkwd10s-secondary; // #046a38
+$brand-danger:          $lkwd10s-accent-2;  // #a22a22
+
+
+//== Typography
+//
+//##
+$font-family-sans-serif:  $lkwd10s-body-font-family;
+
+$headings-font-family:    $lkwd10s-headings-font-family;
+$headings-font-weight:    $lkwd10s-headings-font-weight;
+
+
+//== Iconography
+//
+//##
+$icon-font-path: "../fonts/";
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-default-color:             $lkwd10s-primary;
+$navbar-default-bg:                #fff;
+
+// Navbar Links
+$navbar-default-link-color:                $navbar-default-color;
+$navbar-default-link-hover-color:          #000;
+$navbar-default-link-hover-bg:             $lkwd10s-accent-1;
+
+
+//=== Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-color:                      #fff;
+$navbar-inverse-bg:                         $lkwd10s-primary;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 #fff;
+$navbar-inverse-link-hover-color:           #000;
+$navbar-inverse-link-hover-bg:              $lkwd10s-accent-1;
+$navbar-inverse-link-active-color:          $navbar-inverse-link-color;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            $navbar-inverse-link-hover-bg;
+$navbar-inverse-toggle-border-color:        #fff;
+
+
+@import 'bootstrap';
