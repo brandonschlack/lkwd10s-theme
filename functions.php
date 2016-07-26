@@ -47,6 +47,16 @@ function lkwd10s_setup() {
 		'primary' => esc_html__( 'Primary', 'lkwd10s' ),
 	) );
 
+	/**
+	 * Add support for core custom logo.
+	 */
+	add_theme_support( 'custom-logo', array(
+		'height'      => 100,
+		'width'       => 258,
+		'flex-width'  => true,
+		'flex-height' => true,
+	) );
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -91,6 +101,19 @@ function lkwd10s_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'lkwd10s_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'lkwd10s_content_width', 0 );
+
+/**
+ * Return early if Custom Logos are not available.
+ *
+ * @todo Remove after WP 4.7
+ */
+function lkwd10s_beta_theme_the_custom_logo() {
+	if ( ! function_exists( 'the_custom_logo' ) ) {
+		return;
+	} else {
+		the_custom_logo();
+	}
+}
 
 /**
  * Register widget area.
